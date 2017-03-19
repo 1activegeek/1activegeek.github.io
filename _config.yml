@@ -78,9 +78,9 @@ analytics:
 # Site Author
 author:
   name             : "Shawn Mix"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "In Progress"
-  location         : "Somewhere"
+  avatar           : "/assets/images/NYC-Circle.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Just another geek who happens to be active"
+  location         : "Shelton, CT"
   email            :
   uri              :
   bitbucket        :
@@ -89,18 +89,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "1activegeek"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "1activegeek"
   lastfm           :
-  linkedin         :
+  linkedin         : "shawn-mix"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "1activegeek"
   vine             :
   weibo            :
   xing             :
