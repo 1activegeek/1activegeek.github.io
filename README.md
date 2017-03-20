@@ -5,3 +5,6 @@ Some reference info/links
 [Getting Started with GitLab CI](https://docs.gitlab.com/ce/ci/quick_start/)
 
 [HTML5 UP Themes](https://html5up.net)
+
+[Minimal Mistakes Config Docs](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+
