@@ -1,8 +1,8 @@
 image: ruby:2.3
-variables:
-  JEKYLL_ENV: production
-before_script:
-  - bundle install
+# variables:
+#   JEKYLL_ENV: production
+# before_script:
+#   - bundle install
 # test:
 #   stage: test
 #   script:
@@ -15,7 +15,7 @@ before_script:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+  - echo 'Nothing to do...'
   artifacts:
     paths:
     - public
