@@ -2,9 +2,10 @@
 layout: post
 title: AirPlay to Google Home Speakers or any Chromecast enabled speaker ... yes really!
 date: 2019-04-28 18:19:31.000000000 -04:00
+image: 2019-04-airplay-on-google.jpg
 categories: []
 tags: []
-permalink: "/blog/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really/"
+permalink: "/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really/"
 ---
 I know what you're thinking, it's not possible. There are bunches of posts all over of different ways to try and use AirPlay with convoluted methodologies. I promise you, I have the best and simplest way to do it. Sadly, I didn't even create it, I'm just a huge fan that is documenting and spreading the news about it!
 
@@ -32,10 +33,17 @@ Method 2 is my preferred method since I dockerize almost all my home apps now. F
 
 So what's left? NOTHING! If you haven't already gotten so excited, dive in. It's so easy - especially my docker container. It'll get you going, streaming, and now you can almost entirely via voice play your Apple Music on your Chromecast based speakers, Sonos devices, or other DLNA based systems.
 
-<figure class="aligncenter is-resized"><img src="/assets/2019/04/image.png" alt="" class="wp-image-927" width="293" height="564"><br>
-<figcaption>This is the end results - all my Google Home Mini devices show up with a + at the end to indicate they are the devices added from this integration</figcaption>
-</figure>
-
+{:.center}
+![]({{ site.baseurl }}/img/2019-04-airplay-screenshot.png)
+<br>
+This is the end results - all my Google Home Mini devices show up with a + at the end to indicate they are the devices added from this integration
+{: .center}
+<style>
+.center {
+  text-align: center;
+}
+</style>
+<br>
 If you don't have a speaker, then you can also help support my blog and tech efforts by clicking on one of the links below to get yourself a new device. Links will bring you to affiliate sites but allow me to receive a portion of proceeds to help fund the blog and future content.
 
 [Google Home Display](https://amzn.to/2GTlHNV)  
@@ -45,5 +53,4 @@ If you don't have a speaker, then you can also help support my blog and tech eff
 [Sonos Beam](https://amzn.to/2GR7Usc)  
 [Sonos Connect:Amp](https://amzn.to/2INgWsy)
 
-Unfortunately it seems Amazon won't let me direct link the Chromecast, and they don't have the Google Home Mini available - so maybe you can use those links and pick up something else nice for yourself? If you'd like to you can also use my BuyMeACoffee link.&nbsp;
-
+Unfortunately it seems Amazon won't let me direct link the Chromecast, and they don't have the Google Home Mini available - so maybe you can use those links and pick up something else nice for yourself? If you'd like to you can also use my BuyMeACoffee link.

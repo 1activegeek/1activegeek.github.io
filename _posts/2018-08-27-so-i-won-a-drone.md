@@ -2,13 +2,14 @@
 layout: post
 title: So I "won" a drone ...
 date: 2018-08-27 10:00:39.000000000 -04:00
+image: 2018-08-won-a-drone.jpg
 categories:
 - active
 - geek
 tags:
 - drone
 - gym
-permalink: "/blog/active/so-i-won-a-drone/"
+# permalink: "/blog/active/so-i-won-a-drone/"
 ---
 
 So I was recently on my annual pilgrimage to Las Vegas - I head out every year for BlackHat and DEFCON. Working in the InfoSec field, and enjoying InfoSec as much as I do - it's sort of like a requirement. The community is quite strong and it's always a good time. When attending the BlackHat portion, it's more of a corporate type thing. What does this mean? Lots of free giveaways from Vendors for all different kinds of stuff!&nbsp;
@@ -21,9 +22,10 @@ So I returned the next day late in the afternoon to see the status. Well, since 
 
 Upon my final return toward the end of the day and the time to see the final names chosen, I was dropped down again to 5th. There was probably about 30 minutes left, so I stepped up to make sure I keep myself in the top by occupying a stand (I'll be selfish here!), continuing to work up the board, and just improving on my method. Well as luck would have it, I managed on one of my best runs to score 15 points (only 3 questions!) higher than the top guy. At the end, the 4 larger stands (computer based, not tablet based) were occupied by 3/5 top leaderboard holders (myself included) and 1 other guy trying tirelessly to get on the board. So the prize pool had a bunch of stuff but the Phantom 3 Standard and the Oculous Rift were the top prizes in value. Well you would guess I picked the Phantom, but I actually picked the Oculous!
 
-<figure class="wp-block-image"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/2018/08/IMG_1826-e1535340430416.jpg" alt="" class="wp-image-687"><br>
-<figcaption>The winning picture with the guy running things as the iBoss booth</figcaption>
-</figure>
+<br>
+![]({{site.baseurl}}/img/2018-08-won-a-drone.jpg)
+<center><h6>The winning picture with the guy running things at the iBoss booth</h6></center>
+<br>
 
 Why you ask would I do that? Well from a value standpoint the Phantom 3 Standard is actually older and while still brand new, worth less than an Oculous Rift brand new. The other benefit, was that they would ship me the Oculous, vs the Phantom I would take or have to wait like 4-6 weeks for it to be shipped to me (long story!). Good news, the Rift arrived from Amazon. Did you know you can return Gifts from Amazon for credit?! So technically I "won" a drone, that I actually bought from Amazon using the credit from the Oculous! So instead of getting an older larger drone, I picked up the newer DJI Mavic Air for about half price, out of my pocket that is!
 
@@ -40,14 +42,17 @@ One of my side hobbies already is photography. I'm no pro by any stretch, but I 
 
 So now I've got a new hobby to add along with the photography and that's to really start getting into the videography as well. I'll probably do another post some other time on photography, my kit, accessories, and such. Leave a comment down below and let me know if that would be of interest. For now though, I'll leave you all with some snippets of what I've captured with the Mavic Air thus far. I'm not claiming it's anything breathtaking or fantastically amazing - but I think it's pretty cool what can be done just within the DJI Go app itself, no big bad post processing software or anything!
 
-<figure class="wp-block-video aligncenter"><video controls src="/assets/2018/08/2018_08_24_18_28_03_qm-3.mp4"></video><br>
-<figcaption>So the first crash! Thankfully had the guards on. Tried to hit the cancel button, but missed on the phone screen - it basically stops because it hit the house!</figcaption>
-</figure>
+<br>
+![]({{site.baseurl}}/img/2018-08-drone-crash.mp4)
+<center><h6>So the first crash! Thankfully had the guards on. Tried to hit the cancel button, but missed on the phone screen - it basically stops because it hit the house!</h6></center>
+<br>
 
-<figure class="wp-block-video aligncenter"><video controls src="/assets/2018/08/DD029418-5A01-4300-BF6F-40E602A877B1-3.mp4"></video><br>
-<figcaption>A quick aerial tour shot I did of my neighborhood. It's a community still under construction hence the empty lots and dirt</figcaption>
-</figure>
+<br>
+![]({{site.baseurl}}/img/2018-08-drone-neighborhood-birdseye.mp4)
+<center><h6>A quick aerial tour shot I did of my neighborhood. It's a community still under construction hence the empty lots and dirt</h6></center>
+<br>
 
-<figure class="wp-block-video aligncenter"><video controls src="/assets/2018/08/908B578E-BFCF-4076-B4ED-2840C2EA4766.mp4"></video><br>
-<figcaption>So I wanted to see how well I could do flying indoors, so I shot some footage at the gym - I was actually quite impressed</figcaption>
-</figure>
+<br>
+![]({{site.baseurl}}/img/2018-08-drone-gym-flyby.mp4)
+<center><h6>So I wanted to see how well I could do flying indoors, so I shot some footage at the gym - I was actually quite impressed</h6></center>
+<br>

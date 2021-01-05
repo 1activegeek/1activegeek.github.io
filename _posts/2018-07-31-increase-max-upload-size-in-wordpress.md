@@ -2,6 +2,7 @@
 layout: post
 title: Increase Max Upload Size in Wordpress
 date: 2018-07-31 09:00:46.000000000 -04:00
+image: 2018-07-wordpress-cover.jpeg
 categories:
 - geek
 - quicktips
@@ -10,7 +11,7 @@ tags:
 - nginx
 - php
 - wordpress
-permalink: "/blog/geek/increase-max-upload-size-in-wordpress/"
+# permalink: "/blog/geek/increase-max-upload-size-in-wordpress/"
 ---
 This quick tip is focused around adjusting the max upload limit on a Wordpress site. While I was working on setting this site up, I ran into this issue since I was uploading large high quality media for my background images on the front page. So I naturally started the google hunt to find something. There are LOADS of different pieces of information and ways to try and adjust this. Unfortunately none of them were the right way for me.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Using acme.sh for individual LetsEncrypt certificates
 date: 2018-11-02 10:00:28.000000000 -04:00
+image: 2018-11-acme-sh-cover.png
 categories:
 - geek
 - quicktips
@@ -9,7 +10,7 @@ tags:
 - docker
 - nginx
 - unRAID
-permalink: "/blog/geek/using-acme-sh-for-individual-letsencrypt-certificates/"
+# permalink: "/blog/geek/using-acme-sh-for-individual-letsencrypt-certificates/"
 ---
 So you wanted to make your site a bit more secure and start to leverage SSL certificates using the popular LetsEncrypt method. Great choice!! I too took the same journey, as you can see for this site. The interesting thing, is I was using a popular NGINX Docker container from the team at LS.io. The up side, it was quick and easy, and it's my default NGINX install for hosting a few sites. The unfortunate thing, is that I didn't have a way to separate out the individual domains I was hosting to separate certificates. What do I mean, well let's dig a little deeper.
 
@@ -19,9 +20,17 @@ For me personally, I just didn't think it looked very nice having a laundry list
 
 The silver lining here, is that using this container isn't the only way to go! I stumbled upon this great repository&nbsp;[acme.sh](https://github.com/Neilpang/acme.sh)&nbsp;on GitHub. He created a set of shell scripts and cron jobs. They request the certificates needed and then use a cron job to request renewal on a specified interval. The cron job basically runs pretty frequently, with a control file that governs when to actually put through the request to LetsEncrypt for new certificates. What makes it even better, there is even a docker container version.
 
-<figure class="wp-block-image"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/2018/11/Subject-Alternative-Name.png" alt="" class="wp-image-855"><br>
-<figcaption>This is much better looking than a long list of gobbley gook</figcaption>
-</figure>
+{:.center}
+
+![]({{ site.baseurl }}/img/2018-11-subject-alternative-name.png)
+<br>
+This is much better looking than a long list of gobbley gook
+{: .center}
+<style>
+.center {
+  text-align: center;
+}
+</style>
 
 Let me step back for a moment and highlight that many users could likely just get away with installing the scripts right onto a system doing their web hosting or similar to retrieve it from. For me, I wanted to run this on an unRAID box as there are a few other containers including the NGINX container mentioned above running on it. If you aren't aware, it's not quite as straightforward/easy to install scripts, cron jobs, etc since the OS runs completely in memory on each boot. Enter the docker container option. Now I can just setup the initial certs using some docker commands, and then create a single cron job in the unRAID UI.&nbsp;
 
@@ -29,7 +38,7 @@ If you aren't aware, docker containers can be spun up on demand, run a command, 
 
 If you too are running a similar setup, the script below will create a log (in case of issues), clear the log once reaching a large enough size, and finally run the cron job (logging to said log). You'll also notice that the docker run command has a mount option being used so that the output of job, will drop the certs into the location where they will be needed. I should point out, you'll want to use the `--nginx`&nbsp;flag when running the `--issue`&nbsp;command. This will be sure that the output will include a proper formatted certificate for NGINX - aka the .PEM formats.
 
-```
+{% highlight bash %}
 #!/bin/bash
 ## Make sure file exists
 touch /mnt/user/appdata/nginx/keys/acmesh/cron-job.log
@@ -45,6 +54,6 @@ file_size=`du -b /mnt/user/appdata/nginx/keys/acmesh/cron-job.log | tr -s '\t' '
 
 ## Command to run
 docker run --rm -i -v /mnt/user/appdata/nginx/keys/acmesh:/acme.sh --net=host --name=acme neilpang/acme.sh --cron >> /mnt/user/appdata/nginx/keys/acmesh/cron-job.log
-```
+{% endhighlight %}
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlighting();</script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlighting();</script> -->

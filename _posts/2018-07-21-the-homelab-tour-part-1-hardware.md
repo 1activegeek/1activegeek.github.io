@@ -2,6 +2,7 @@
 layout: post
 title: 'The Homelab Tour Part 1: Hardware'
 date: 2018-07-21 13:13:14.000000000 -04:00
+image: 2018-07-network-rack.jpeg
 categories:
 - geek
 tags:
@@ -12,7 +13,7 @@ tags:
 - ubiquiti
 - unifi
 - unRAID
-permalink: "/blog/geek/the-homelab-tour-part-1-hardware/"
+# permalink: "/blog/geek/the-homelab-tour-part-1-hardware/"
 ---
 So we'll start things off here with a first post I've been meaning to put together for quite awhile ... just haven't had a blog to post it to. So I'm going to break down here the details of my Homelab. This will also include a build of materials for all the different "stuff" needed to make it a reality. I hope it can help and/inspire your future builds or improvements to your current setup.
 
@@ -20,7 +21,7 @@ Let's start off with the hardware side of things. Below I'll break out each of t
 
 # Hardware
 
-# ![]({{ site.baseurl }}/assets/2018/07/13B978A2-E795-471D-8E71-78E5A010D9FE-e1532272636276-744x992.jpeg)
+# ![]({{ site.baseurl }}/img/2018-07-network-rack.jpeg)
 
 (From bottom to Top)
 
