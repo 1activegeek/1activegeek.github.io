@@ -14,7 +14,9 @@ tags:
 - snmp
 - telegraf
 - unifi
-permalink: "/blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-2/"
+# permalink: "/blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-2/"
+redirect_from:
+  - /blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-2
 ---
 
 Welcome to Part 2 of this article. I hope in the first part you understood a bit more about how we will organize our collected data into separate databases, how we can create simple databases, and lastly how we can set our retention policies as desired. In this part, we're going to dig in a bit further into actually collecting some data from our Unifi devices. Let's get started with the first piece which will be to enable SNMP collection.

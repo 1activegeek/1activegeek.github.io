@@ -9,7 +9,9 @@ categories:
 tags:
 - drone
 - gym
-permalink: "/blog/active/so-i-won-a-drone/"
+# permalink: "/blog/active/so-i-won-a-drone/"
+redirect_from:
+  - /blog/active/so-i-won-a-drone
 ---
 
 So I was recently on my annual pilgrimage to Las Vegas - I head out every year for BlackHat and DEFCON. Working in the InfoSec field, and enjoying InfoSec as much as I do - it's sort of like a requirement. The community is quite strong and it's always a good time. When attending the BlackHat portion, it's more of a corporate type thing. What does this mean? Lots of free giveaways from Vendors for all different kinds of stuff!&nbsp;

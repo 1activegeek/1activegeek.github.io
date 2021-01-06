@@ -14,7 +14,9 @@ tags:
 - snmp
 - telegraf
 - unifi
-permalink: "/blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-1/"
+# permalink: "/blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-1/"
+redirect_from:
+  - /blog/geek/collecting-storing-and-presenting-unifi-metrics-with-the-tig-stack-part-1
 ---
 
 So this article is going to be part 1 of 3 (hopefully). The goal is to walk through how I'm collecting and storing my Unifi metrics and then presenting them in a sort of dashboard type view. The technologies in use here are from the TIG stack - which consists of Telegraf, InfluxDB, and Grafana. The catch here is that I've not even finished getting up my Unifi metrics in Grafana (part 3 the visualization). I plan to use this article series as a driver to help get that finally completed and pushed out to you all. Either way lets get started and dig into the core storage piece of things.

@@ -13,7 +13,9 @@ tags:
 - ubiquiti
 - unifi
 - unRAID
-permalink: "/blog/geek/the-homelab-tour-part-1-hardware/"
+# permalink: "/blog/geek/the-homelab-tour-part-1-hardware/"
+redirect_from:
+  - /blog/geek/the-homelab-tour-part-1-hardware
 ---
 So we'll start things off here with a first post I've been meaning to put together for quite awhile ... just haven't had a blog to post it to. So I'm going to break down here the details of my Homelab. This will also include a build of materials for all the different "stuff" needed to make it a reality. I hope it can help and/inspire your future builds or improvements to your current setup.
 
