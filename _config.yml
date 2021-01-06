@@ -3,7 +3,7 @@
 
 title: 1activegeek | The geek with an active lifestyle
 description: If you like what you see - Please be sure to get interactive! Like posts, leave comments, share with friends, etc. It’d be great to see this grow into something stronger than just my little space to share the ramblings I’ve learned about or a record of my adventures to fall back on when I inevitably forget how I did it!
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
