@@ -13,6 +13,7 @@ tags:
 # permalink: "/blog/geek/using-acme-sh-for-individual-letsencrypt-certificates/"
 redirect_from:
   - /blog/geek/using-acme-sh-for-individual-letsencrypt-certificates
+  - /blog/geek/using-acme-sh-for-individual-letsencrypt-certificates/
 ---
 So you wanted to make your site a bit more secure and start to leverage SSL certificates using the popular LetsEncrypt method. Great choice!! I too took the same journey, as you can see for this site. The interesting thing, is I was using a popular NGINX Docker container from the team at LS.io. The up side, it was quick and easy, and it's my default NGINX install for hosting a few sites. The unfortunate thing, is that I didn't have a way to separate out the individual domains I was hosting to separate certificates. What do I mean, well let's dig a little deeper.
 
