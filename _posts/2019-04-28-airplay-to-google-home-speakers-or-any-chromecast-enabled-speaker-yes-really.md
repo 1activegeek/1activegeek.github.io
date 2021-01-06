@@ -5,7 +5,7 @@ date: 2019-04-28 18:19:31.000000000 -04:00
 image: 2019-04-airplay-on-google.jpg
 categories: []
 tags: []
-permalink: "/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really/"
+permalink: "/blog/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really/"
 ---
 I know what you're thinking, it's not possible. There are bunches of posts all over of different ways to try and use AirPlay with convoluted methodologies. I promise you, I have the best and simplest way to do it. Sadly, I didn't even create it, I'm just a huge fan that is documenting and spreading the news about it!
 
