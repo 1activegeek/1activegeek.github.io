@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: About
 image: author-headshot.jpg
 permalink: /about/
