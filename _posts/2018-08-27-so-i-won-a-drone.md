@@ -46,16 +46,22 @@ One of my side hobbies already is photography. I'm no pro by any stretch, but I 
 So now I've got a new hobby to add along with the photography and that's to really start getting into the videography as well. I'll probably do another post some other time on photography, my kit, accessories, and such. Leave a comment down below and let me know if that would be of interest. For now though, I'll leave you all with some snippets of what I've captured with the Mavic Air thus far. I'm not claiming it's anything breathtaking or fantastically amazing - but I think it's pretty cool what can be done just within the DJI Go app itself, no big bad post processing software or anything!
 
 <br>
-![]({{site.baseurl}}/img/2018-08-drone-crash.mp4)
+<video controls>
+<source src="{{site.baseurl}}/img/2018-08-drone-crash.mp4"/>
+</video>
 <center><h6>So the first crash! Thankfully had the guards on. Tried to hit the cancel button, but missed on the phone screen - it basically stops because it hit the house!</h6></center>
 <br>
 
 <br>
-![]({{site.baseurl}}/img/2018-08-drone-neighborhood-birdseye.mp4)
+<video controls>
+<source src="{{site.baseurl}}/img/2018-08-drone-neighborhood-birdseye.mp4"/>
+</video>
 <center><h6>A quick aerial tour shot I did of my neighborhood. It's a community still under construction hence the empty lots and dirt</h6></center>
 <br>
 
 <br>
-![]({{site.baseurl}}/img/2018-08-drone-gym-flyby.mp4)
+<video controls>
+<source src="{{site.baseurl}}/img/2018-08-drone-gym-flyby.mp4"/>
+</video>
 <center><h6>So I wanted to see how well I could do flying indoors, so I shot some footage at the gym - I was actually quite impressed</h6></center>
 <br>
