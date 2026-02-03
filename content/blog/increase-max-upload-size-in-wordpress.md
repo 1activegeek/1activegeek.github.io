@@ -1,8 +1,8 @@
 ---
 title: "Increase Max Upload Size in Wordpress"
 date: 2018-07-21
+section: blog
 tags:
-  - blog
   - docker
   - nginx
   - php

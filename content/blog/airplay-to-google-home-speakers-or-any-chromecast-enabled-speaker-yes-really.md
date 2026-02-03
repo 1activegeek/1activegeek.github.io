@@ -1,8 +1,12 @@
 ---
 title: "AirPlay to Google Home Speakers or any Chromecast enabled speaker ... yes really!"
 date: 2019-04-28
+section: blog
 tags:
-  - blog
+  - airplay
+  - google-home
+  - chromecast
+  - audio
 aliases:
   - /blog/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really
   - /blog/uncategorized/airplay-to-google-home-speakers-or-any-chromecast-enabled-speaker-yes-really/
@@ -36,7 +40,7 @@ So what's left? NOTHING! If you haven't already gotten so excited, dive in. It's
 
 ![](/img/2019-04-airplay-screenshot.png)
 
-*This is the end results - all my Google Home Mini devices show up with a + at the end to indicate they are the devices added from this integration*
+_This is the end results - all my Google Home Mini devices show up with a + at the end to indicate they are the devices added from this integration_
 
 If you don't have a speaker, then you can also help support my blog and tech efforts by clicking on one of the links below to get yourself a new device. Links will bring you to affiliate sites but allow me to receive a portion of proceeds to help fund the blog and future content.
 

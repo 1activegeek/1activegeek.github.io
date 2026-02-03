@@ -1,11 +1,11 @@
 ---
 title: "The Homelab Tour Part 1: Hardware"
 date: 2018-07-21
+section: blog
+featured: true
 tags:
-  - blog
   - docker
   - esxi
-  - featured
   - linux
   - ubiquiti
   - unifi

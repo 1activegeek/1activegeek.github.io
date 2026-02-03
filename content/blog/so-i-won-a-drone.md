@@ -1,8 +1,8 @@
 ---
 title: "So I 'won' a drone ..."
 date: 2018-08-27
+section: blog
 tags:
-  - blog
   - drone
   - gym
   - active
