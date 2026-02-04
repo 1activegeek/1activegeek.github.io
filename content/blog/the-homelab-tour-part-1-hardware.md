@@ -3,6 +3,7 @@ title: "The Homelab Tour Part 1: Hardware"
 date: 2018-07-21
 section: blog
 featured: true
+image: 2018-07-network-rack.jpeg
 tags:
   - docker
   - esxi

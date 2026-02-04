@@ -2,6 +2,7 @@
 title: "AirPlay to Google Home Speakers or any Chromecast enabled speaker ... yes really!"
 date: 2019-04-28
 section: blog
+image: 2019-04-airplay-on-google.jpg
 tags:
   - airplay
   - google-home

@@ -132,12 +132,11 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
 
+      const excludedFolders = new Set([".", "tags", "blog", "notes", "garden"])
       const folders: Set<SimpleSlug> = new Set(
         allFiles.flatMap((data) => {
           return data.slug
-            ? _getFolders(data.slug).filter(
-                (folderName) => folderName !== "." && folderName !== "tags",
-              )
+            ? _getFolders(data.slug).filter((folderName) => !excludedFolders.has(folderName))
             : []
         }),
       )
@@ -154,9 +153,8 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         const slug = changeEvent.file.data.slug!
-        const folders = _getFolders(slug).filter(
-          (folderName) => folderName !== "." && folderName !== "tags",
-        )
+        const excludedFolders = new Set([".", "tags", "blog", "notes", "garden"])
+        const folders = _getFolders(slug).filter((folderName) => !excludedFolders.has(folderName))
         folders.forEach((folder) => affectedFolders.add(folder))
       }
 

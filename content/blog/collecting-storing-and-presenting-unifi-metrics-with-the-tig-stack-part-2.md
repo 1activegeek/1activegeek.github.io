@@ -2,6 +2,7 @@
 title: "Collecting, storing, and presenting Unifi metrics with the TIG stack (part 2)"
 date: 2018-10-01
 section: blog
+image: 2018-09-unifi-sdn-controller.png
 tags:
   - docker
   - grafana

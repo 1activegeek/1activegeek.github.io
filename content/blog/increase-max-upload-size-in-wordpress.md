@@ -2,6 +2,7 @@
 title: "Increase Max Upload Size in Wordpress"
 date: 2018-07-21
 section: blog
+image: 2018-07-wordpress-cover.jpeg
 tags:
   - docker
   - nginx

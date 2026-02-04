@@ -18,11 +18,11 @@ import Search from "./Search"
 import Footer from "./Footer"
 import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
-import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import TopNav from "./TopNav"
 
 export {
   ArticleTitle,
@@ -44,10 +44,10 @@ export {
   Footer,
   DesktopOnly,
   MobileOnly,
-  RecentNotes,
   NotFound,
   Breadcrumbs,
   Comments,
   Flex,
   ConditionalRender,
+  TopNav,
 }

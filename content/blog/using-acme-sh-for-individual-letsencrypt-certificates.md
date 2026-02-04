@@ -2,6 +2,7 @@
 title: "Using acme.sh for individual LetsEncrypt certificates"
 date: 2018-11-02
 section: blog
+image: 2018-11-acme-sh-cover.png
 tags:
   - docker
   - nginx

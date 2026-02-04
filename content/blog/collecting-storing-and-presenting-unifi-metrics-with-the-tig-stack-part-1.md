@@ -2,6 +2,7 @@
 title: "Collecting, storing, and presenting Unifi metrics with the TIG stack (part 1)"
 date: 2018-09-25
 section: blog
+image: 2018-09-tig-stack-header.jpg
 tags:
   - docker
   - grafana
