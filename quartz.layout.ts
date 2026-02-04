@@ -5,14 +5,9 @@ import BlogListing from "./quartz/components/BlogListing"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.TopNav()],
   afterBody: [],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/1activegeek",
-      "RSS Feed": "https://1activegeek.com/index.xml",
-    },
-  }),
+  footer: Component.Footer({ links: {} }),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -25,27 +20,45 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.ConditionalRender({
+      component: BlogListing(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
+    Component.ConditionalRender({
+      component: Component.PageTitle(),
+      condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.Explorer(),
+    Component.ConditionalRender({
+      component: Component.MobileOnly(Component.Spacer()),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.Flex({
+        components: [
+          {
+            Component: Component.Search(),
+            grow: true,
+          },
+          { Component: Component.Darkmode() },
+          { Component: Component.ReaderMode() },
+        ],
+      }),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.Explorer({
+        filterFn: (node) =>
+          node.slugSegment !== "tags" &&
+          node.slugSegment !== "blog" &&
+          node.slugSegment !== "notes" &&
+          node.slugSegment !== "garden",
+      }),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
   ],
-  right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
-  ],
+  right: [Component.DesktopOnly(Component.TableOfContents()), Component.Backlinks()],
 }
 
 // components for pages that display lists of pages (e.g. tags or folders)
@@ -71,7 +84,13 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) =>
+        node.slugSegment !== "tags" &&
+        node.slugSegment !== "blog" &&
+        node.slugSegment !== "notes" &&
+        node.slugSegment !== "garden",
+    }),
   ],
   right: [],
 }
