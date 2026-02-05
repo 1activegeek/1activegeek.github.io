@@ -25,7 +25,7 @@ The silver lining here, is that using this container isn't the only way to go! I
 
 {:.center}
 
-![]({{ site.baseurl }}/img/2018-11-subject-alternative-name.png)
+![]({{ site.baseurl }}/assets/img/2018-11-subject-alternative-name.png)
 <br>
 This is much better looking than a long list of gobbley gook
 {: .center}

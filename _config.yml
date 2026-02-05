@@ -1,76 +1,142 @@
 #-------------------------------
 # General Site Settings
 
-title: 1activegeek | The geek with an active lifestyle
-description: If you like what you see - Please be sure to get interactive! Like posts, leave comments, share with friends, etc. It’d be great to see this grow into something stronger than just my little space to share the ramblings I’ve learned about or a record of my adventures to fall back on when I inevitably forget how I did it!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+title: 1activegeek
+heading: The geek with an active lifestyle
+description: If you like what you see - Please be sure to get interactive! Like posts, leave comments, share with friends, etc. It'd be great to see this grow into something stronger than just my little space to share the ramblings I've learned about or a record of my adventures to fall back on when I inevitably forget how I did it!
+baseurl: ""
+url: "https://1activegeek.com"
 
 #-------------------------------
 # About Section
-author-name:   Shawn Mix
+author-name: Shawn Mix
 author-avatar: author-headshot.jpg
 
+#-------------------------------
+# Contact/Social links
+twitter: https://twitter.com/1activegeek
+instagram: https://www.instagram.com/1activegeek
+github: https://github.com/1activegeek
+# facebook: https://facebook.com/
+# pinterest: https://www.pinterest.com/
+# linkedin: https://linkedin.com/in/
 
 #-------------------------------
-# Contact links
-# facebook:  https://facebook.com/ # Add your Facebook handle
-twitter:   https://twitter.com/1activegeek # Add your Facebook handle
-instagram: https://www.instagram.com/1activegeek # Add your Facebook handle
-# pinterest: https://www.pinterest.com/ # Add your Facebook handle
-
+# Buy Me a Coffee / Donations
+buymeacoffee: https://paypal.me/shawnmix/3
 
 #-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: 1activegeek # Add your shortname for Disqus Comment. For example mr-brown
-
+# Comment Section (Disqus - Fallback)
+disqus-identifier: 1activegeek
 
 #-------------------------------
-# Instagram Feed
-# instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
-
+# Comment Section (Giscus - Primary)
+# To set up:
+# 1. Enable Discussions on the GitHub repo
+# 2. Install Giscus app: https://github.com/apps/giscus
+# 3. Configure at https://giscus.app and update values below
+giscus:
+  enabled: true
+  repo: "1activegeek/1activegeek.github.io"
+  repo-id: ""  # Get from giscus.app after setup
+  category: "Comments"
+  category-id: ""  # Get from giscus.app after setup
+  mapping: "pathname"
+  reactions-enabled: "1"
+  emit-metadata: "0"
+  theme: "dark"
+  lang: "en"
+  loading: "lazy"
 
 #-------------------------------
 # Google Analytics
-google-analytics: UA-97873060-1 # Add your identifier. For example UA-99631805-1.
-
+google-analytics: UA-97873060-1
 
 #-------------------------------
-# Newsletter
-# mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+# Jekyll Garden Features
+preferences:
+  search:
+    enabled: true
+  wiki_style_link: true
+  backlinks:
+    enabled: true
+  page_preview: true
 
+#-------------------------------
+# Navigation Menu
+menu:
+  - title: Home
+    url: /
+  - title: Notes
+    url: /notes
+  - title: Blog
+    url: /blog
+  - title: About
+    url: /about
+
+#-------------------------------
+# Footer
+footer:
+  copyright: true
+  credits: true
 
 #-------------------------------
 # Build settings
 markdown: kramdown
 permalink: ':title/'
+
 plugins:
-  - jekyll-paginate
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-tidy
 
 whitelist:
   - jekyll-redirect-from
 
-paginate: 7
-paginate_path: "/page/:num"
+#-------------------------------
+# Collections
+collections:
+  notes:
+    output: true
+    permalink: /notes/:slug
 
-include:
-  - _pages
+#-------------------------------
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
 
+#-------------------------------
+# SASS
 sass:
   sass_dir: _sass
   style: compressed
 
+#-------------------------------
+# Exclude from processing
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE.txt
 
 #-------------------------------
-# Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Private link placeholder (for wiki-links to unpublished notes)
+private_link_message: "This note hasn't been published yet"

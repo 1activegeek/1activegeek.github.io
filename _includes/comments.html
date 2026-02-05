@@ -1,0 +1,32 @@
+<!-- Comments Section -->
+<div class="comments-section">
+
+  <!-- Giscus Comments (Primary) -->
+  {% if site.giscus.enabled and site.giscus.repo-id != "" %}
+  <div class="giscus-comments">
+    <h3 class="comments-title">Comments</h3>
+    {% include giscus-comments.html %}
+  </div>
+  {% endif %}
+
+  <!-- Disqus Comments (Fallback) -->
+  {% if site.disqus-identifier %}
+  <div class="disqus-fallback">
+    {% if site.giscus.enabled and site.giscus.repo-id != "" %}
+    <details class="disqus-toggle">
+      <summary class="disqus-summary">
+        <span>Looking for older comments? View Disqus comments</span>
+      </summary>
+      <div class="disqus-content">
+        {% include disqus-comments.html %}
+      </div>
+    </details>
+    {% else %}
+    <!-- If Giscus not configured, show Disqus as primary -->
+    <h3 class="comments-title">Comments</h3>
+    {% include disqus-comments.html %}
+    {% endif %}
+  </div>
+  {% endif %}
+
+</div>

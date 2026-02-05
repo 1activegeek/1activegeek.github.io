@@ -8,7 +8,21 @@ layout: null
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | array_to_sentence_string }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}"
+      "date"     : "{{ post.date }}",
+      "type"     : "post"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
+  {% if site.notes.size > 0 %}
+  ,
+  {% for note in site.notes %}
+    {
+      "title"    : "{{ note.title | escape }}",
+      "category" : "note",
+      "tags"     : "",
+      "url"      : "{{ site.baseurl }}{{ note.url }}",
+      "date"     : "",
+      "type"     : "note"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  {% endif %}
 ]

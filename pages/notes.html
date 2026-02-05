@@ -1,0 +1,43 @@
+---
+layout: default
+title: Notes
+permalink: /notes/
+---
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="page-content">
+        <div class="page-head">
+          <h1 class="page-title">Digital Garden</h1>
+        </div>
+        <div class="page-body">
+          <p>A collection of interconnected notes, thoughts, and ideas. This is my digital garden - a place where ideas grow and evolve over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-t-8">
+      {% if site.notes.size > 0 %}
+      <div class="notes-grid">
+        {% for note in site.notes %}
+        <a href="{{ note.url | relative_url }}" class="note-card">
+          <h3 class="note-title">{{ note.title }}</h3>
+          <p class="note-excerpt">{{ note.content | strip_html | truncate: 150 }}</p>
+        </a>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="widget">
+        <p style="text-align: center; color: #707890;">No notes published yet. Check back soon!</p>
+      </div>
+      {% endif %}
+    </div>
+    <div class="col col-12 col-t-4">
+      {% include notes-sidebar.html %}
+    </div>
+  </div>
+</div>

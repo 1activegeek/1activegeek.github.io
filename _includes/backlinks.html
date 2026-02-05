@@ -1,0 +1,33 @@
+<!-- Backlinks Section -->
+{% assign defined_backlinks = page.backlinks | default: "" %}
+{% assign backlinks = "" | split: "" %}
+
+{% for note in site.notes %}
+  {% if note.url != page.url %}
+    {% if note.content contains page.url or note.content contains page.title %}
+      {% assign backlinks = backlinks | push: note %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+  {% if post.url != page.url %}
+    {% if post.content contains page.url or post.content contains page.title %}
+      {% assign backlinks = backlinks | push: post %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if backlinks.size > 0 %}
+<div class="backlinks">
+  <h3 class="backlinks-title">Linked References</h3>
+  <ul class="backlinks-list">
+    {% for backlink in backlinks %}
+    <li class="backlink-item">
+      <a href="{{ backlink.url | relative_url }}" class="backlink-link">{{ backlink.title }}</a>
+      <span class="backlink-excerpt">{{ backlink.content | strip_html | truncate: 100 }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

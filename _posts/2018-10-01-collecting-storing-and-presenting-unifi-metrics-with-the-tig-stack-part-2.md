@@ -32,7 +32,7 @@ The first thing you're going to need to do is ensure you have SNMP enabled on yo
 - Next you'll click onto the SNMP tab at the top of the screen
 - Last you'll make sure to enable v1/v2/v3 and set your community string (keep in mind you'll need to specify this community string later)
 
-<figure class="wp-block-image is-resized"><img src="{{ site.baseurl }}/img/2018-09-unifi-sdn-controller.png" alt="Enable SNMP v1/v2 and set the community string" class="wp-image-708" width="768" height="382" /><br />
+<figure class="wp-block-image is-resized"><img src="{{ site.baseurl }}/assets/img/2018-09-unifi-sdn-controller.png" alt="Enable SNMP v1/v2 and set the community string" class="wp-image-708" width="768" height="382" /><br />
 <figcaption><center>Enable SNMP v1/v2 and set the community string</center></figcaption>
 </figure>
 

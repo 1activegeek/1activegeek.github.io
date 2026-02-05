@@ -4,35 +4,38 @@
       <div class="col col-12">
         <div class="footer-top">
           <h2 class="logo-title">
-            <a href="{{site.baseurl}}/" class="logo-text">1activegeek</a>
+            <a href="{{ site.baseurl }}/" class="logo-text">{{ site.title }}</a>
           </h2>
           <div class="top"><i class="ion ion-ios-arrow-up"></i></div>
         </div>
         <div class="footer-bottom">
           <div class="copyright">
-            <p>&copy; {{site.time | date: '%Y'}} Crafted & Designed by <a href="https://github.com/artemsheludko">Artem Sheludko</a></p>
+            {% if site.footer.copyright %}
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author-name }}.
+            {% if site.footer.credits %}
+            Theme inspired by <a href="https://github.com/artemsheludko">Artem Sheludko</a> & <a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io">Jekyll Garden</a>
+            {% endif %}
+            </p>
+            {% endif %}
           </div>
           <div class="footer-social">
             <ul class="list-reset">
-              {% if site.facebook %}
-              <li><a href="{{ site.facebook }}">Facebook</a></li>
-              {% else %} {% endif %}
-
               {% if site.twitter %}
-              <li><a href="{{ site.twitter }}">Twitter</a></li>
-              {% else %} {% endif %}
-
+              <li><a href="{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a></li>
+              {% endif %}
               {% if site.instagram %}
-              <li><a href="{{ site.instagram }}">Instagram</a></li>
-              {% else %} {% endif %}
-
-              {% if site.pinterest %}
-              <li><a href="{{ site.pinterest }}">Pinterest</a></li>
-              {% else %} {% endif %}
+              <li><a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+              {% endif %}
+              {% if site.github %}
+              <li><a href="{{ site.github }}" target="_blank" rel="noopener">GitHub</a></li>
+              {% endif %}
+              {% if site.buymeacoffee %}
+              <li><a href="{{ site.buymeacoffee }}" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-</footer> <!-- /.footer -->
+</footer>

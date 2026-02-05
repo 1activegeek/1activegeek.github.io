@@ -37,7 +37,7 @@ Method 2 is my preferred method since I dockerize almost all my home apps now. F
 So what's left? NOTHING! If you haven't already gotten so excited, dive in. It's so easy - especially my docker container. It'll get you going, streaming, and now you can almost entirely via voice play your Apple Music on your Chromecast based speakers, Sonos devices, or other DLNA based systems.
 
 {:.center}
-![]({{ site.baseurl }}/img/2019-04-airplay-screenshot.png)
+![]({{ site.baseurl }}/assets/img/2019-04-airplay-screenshot.png)
 <br>
 This is the end results - all my Google Home Mini devices show up with a + at the end to indicate they are the devices added from this integration
 {: .center}

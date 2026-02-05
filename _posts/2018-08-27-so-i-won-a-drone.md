@@ -26,7 +26,7 @@ So I returned the next day late in the afternoon to see the status. Well, since 
 Upon my final return toward the end of the day and the time to see the final names chosen, I was dropped down again to 5th. There was probably about 30 minutes left, so I stepped up to make sure I keep myself in the top by occupying a stand (I'll be selfish here!), continuing to work up the board, and just improving on my method. Well as luck would have it, I managed on one of my best runs to score 15 points (only 3 questions!) higher than the top guy. At the end, the 4 larger stands (computer based, not tablet based) were occupied by 3/5 top leaderboard holders (myself included) and 1 other guy trying tirelessly to get on the board. So the prize pool had a bunch of stuff but the Phantom 3 Standard and the Oculous Rift were the top prizes in value. Well you would guess I picked the Phantom, but I actually picked the Oculous!
 
 <br>
-![]({{site.baseurl}}/img/2018-08-won-a-drone.jpg)
+![]({{site.baseurl}}/assets/img/2018-08-won-a-drone.jpg)
 <center><h6>The winning picture with the guy running things at the iBoss booth</h6></center>
 <br>
 
@@ -47,21 +47,21 @@ So now I've got a new hobby to add along with the photography and that's to real
 
 <br>
 <video controls>
-<source src="{{site.baseurl}}/img/2018-08-drone-crash.mp4"/>
+<source src="{{site.baseurl}}/assets/img/2018-08-drone-crash.mp4"/>
 </video>
 <center><h6>So the first crash! Thankfully had the guards on. Tried to hit the cancel button, but missed on the phone screen - it basically stops because it hit the house!</h6></center>
 <br>
 
 <br>
 <video controls>
-<source src="{{site.baseurl}}/img/2018-08-drone-neighborhood-birdseye.mp4"/>
+<source src="{{site.baseurl}}/assets/img/2018-08-drone-neighborhood-birdseye.mp4"/>
 </video>
 <center><h6>A quick aerial tour shot I did of my neighborhood. It's a community still under construction hence the empty lots and dirt</h6></center>
 <br>
 
 <br>
 <video controls>
-<source src="{{site.baseurl}}/img/2018-08-drone-gym-flyby.mp4"/>
+<source src="{{site.baseurl}}/assets/img/2018-08-drone-gym-flyby.mp4"/>
 </video>
 <center><h6>So I wanted to see how well I could do flying indoors, so I shot some footage at the gym - I was actually quite impressed</h6></center>
 <br>

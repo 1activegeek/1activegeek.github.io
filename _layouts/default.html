@@ -8,10 +8,12 @@
   {% if site.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
-  {% include loader.html %}
+
   {% include header.html %}
 
-      {{ content }}
+  <main class="main-content">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
   {% include javascripts.html %}

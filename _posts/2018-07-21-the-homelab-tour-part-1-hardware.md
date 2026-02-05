@@ -24,7 +24,7 @@ Let's start off with the hardware side of things. Below I'll break out each of t
 
 # Hardware
 
-# ![]({{ site.baseurl }}/img/2018-07-network-rack.jpeg)
+# ![]({{ site.baseurl }}/assets/img/2018-07-network-rack.jpeg)
 
 (From bottom to Top)
 

@@ -1,0 +1,42 @@
+<aside class="sidebar notes-sidebar">
+
+  <!-- Recent Notes -->
+  {% if site.notes.size > 0 %}
+  <div class="widget widget-notes">
+    <h3 class="widget-title">Recent Notes</h3>
+    <ul class="notes-list list-reset">
+      {% for note in site.notes limit:5 %}
+      <li class="note-item">
+        <a href="{{ note.url | relative_url }}" class="note-link">{{ note.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- Browse by Tags -->
+  <div class="widget widget-tags">
+    <h3 class="widget-title">Browse Tags</h3>
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign tag_words = site_tags | split:',' | sort %}
+    <ul class="tag-list list-reset">
+    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+      {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+      <li class="tag-item"><a href="{{ site.baseurl }}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}</a></li>
+    {% endunless %}{% endfor %}
+    </ul>
+  </div>
+
+  <!-- Support -->
+  {% if site.buymeacoffee %}
+  <div class="widget widget-buymeacoffee">
+    <h3 class="widget-title">Support</h3>
+    <center>
+      <a href="{{ site.buymeacoffee }}" class="coffee-button" target="_blank" rel="noopener">
+        <img alt="Buy me a coffee" src="{{ '/assets/img/buymeacoffee.png' | relative_url }}"/>
+      </a>
+    </center>
+  </div>
+  {% endif %}
+
+</aside>

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-t-8">
+      <article class="note">
+        <div class="note-content">
+          <h1 class="note-title">{{ page.title | escape }}</h1>
+
+          <div class="note-body">
+            {{ content }}
+          </div>
+
+          <!-- Backlinks Section -->
+          {% if site.preferences.backlinks.enabled %}
+          {% include backlinks.html %}
+          {% endif %}
+        </div>
+      </article>
+    </div>
+
+    <div class="col col-12 col-t-4">
+      {% include notes-sidebar.html %}
+    </div>
+  </div>
+</div>
