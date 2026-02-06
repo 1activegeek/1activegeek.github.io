@@ -89,7 +89,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-tidy
 
 whitelist:
   - jekyll-redirect-from
